@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MIDI IO Breakout"
+Date "2020-01-15"
+Rev "1"
+Comp "Kushview, LLC"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DIN-5_180degree J1
+U 1 1 5E1C9F3F
+P 5100 3900
+F 0 "J1" H 5100 3625 50  0000 C CNN
+F 1 "MIDI Out" H 5100 3534 50  0000 C CNN
+F 2 "midi_io:CUI_SDS-50J" H 5100 3900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5100 3900 50  0001 C CNN
+F 4 "R" H 5100 3900 50  0001 C CNN "Spice_Primitive"
+F 5 "1" H 5100 3900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5100 3900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5100 3900
+	1    0    0    1   
+$EndComp
+Text Label 5400 4750 1    60   ~ 0
+TX
+Wire Wire Line
+	4800 4000 4800 4200
+$Comp
+L power:GND #PWR02
+U 1 1 5E1E1658
+P 5100 4550
+F 0 "#PWR02" H 5100 4300 50  0001 C CNN
+F 1 "GND" H 5105 4377 50  0000 C CNN
+F 2 "" H 5100 4550 50  0001 C CNN
+F 3 "" H 5100 4550 50  0001 C CNN
+	1    5100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E1EE0D0
+P 4800 4350
+F 0 "R1" V 4593 4350 50  0000 C CNN
+F 1 "220" V 4684 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4730 4350 50  0001 C CNN
+F 3 "~" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 4500 4800 4550
+$Comp
+L Device:R R2
+U 1 1 5E1F64F0
+P 5400 4350
+F 0 "R2" V 5193 4350 50  0000 C CNN
+F 1 "220" V 5284 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 4350 50  0001 C CNN
+F 3 "~" H 5400 4350 50  0001 C CNN
+	1    5400 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 4500 5400 4750
+Wire Wire Line
+	4750 3900 4800 3900
+Wire Wire Line
+	5400 4000 5400 4200
+Wire Wire Line
+	5100 4550 5100 4200
+NoConn ~ 5400 3900
+NoConn ~ 4750 3900
+$Comp
+L power:GND #PWR05
+U 1 1 5E225BBD
+P 6850 3500
+F 0 "#PWR05" H 6850 3250 50  0001 C CNN
+F 1 "GND" H 6855 3327 50  0000 C CNN
+F 2 "" H 6850 3500 50  0001 C CNN
+F 3 "" H 6850 3500 50  0001 C CNN
+	1    6850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E2285B3
+P 7100 3500
+F 0 "#PWR06" H 7100 3250 50  0001 C CNN
+F 1 "GND" H 7105 3327 50  0000 C CNN
+F 2 "" H 7100 3500 50  0001 C CNN
+F 3 "" H 7100 3500 50  0001 C CNN
+	1    7100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2450 7350 2450
+Connection ~ 7100 2450
+Wire Wire Line
+	7100 3150 7100 3500
+Wire Wire Line
+	6850 3200 6850 2850
+$Comp
+L Device:R R5
+U 1 1 5E238E15
+P 6850 3350
+F 0 "R5" H 6920 3396 50  0000 L CNN
+F 1 "4.7k" H 6920 3305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6780 3350 50  0001 C CNN
+F 3 "~" H 6850 3350 50  0001 C CNN
+	1    6850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3150 7100 3150
+Wire Wire Line
+	6850 2850 6800 2850
+Wire Wire Line
+	7100 3050 6800 3050
+Connection ~ 7100 3050
+Wire Wire Line
+	7100 3050 7100 2900
+Wire Wire Line
+	7100 2450 7100 2600
+Wire Wire Line
+	6850 2450 7100 2450
+Wire Wire Line
+	6850 2750 6850 2450
+Wire Wire Line
+	6800 2750 6850 2750
+$Comp
+L power:VCC #PWR07
+U 1 1 5E21ADA0
+P 7350 2450
+F 0 "#PWR07" H 7350 2300 50  0001 C CNN
+F 1 "VCC" H 7367 2623 50  0000 C CNN
+F 2 "" H 7350 2450 50  0001 C CNN
+F 3 "" H 7350 2450 50  0001 C CNN
+	1    7350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E219FBF
+P 7100 2750
+F 0 "R4" H 7170 2796 50  0000 L CNN
+F 1 "220" H 7170 2705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7030 2750 50  0001 C CNN
+F 3 "~" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3050 7100 3050
+Text Label 7400 3050 2    60   ~ 0
+RX
+Wire Wire Line
+	5550 2450 5750 2450
+$Comp
+L Device:R R3
+U 1 1 5E1F680B
+P 5400 2450
+F 0 "R3" V 5193 2450 50  0000 C CNN
+F 1 "220" V 5284 2450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 2450 50  0001 C CNN
+F 3 "~" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2850 6200 2850
+Wire Wire Line
+	6150 2450 6150 2850
+Connection ~ 5750 2450
+Wire Wire Line
+	4700 2450 5250 2450
+Wire Wire Line
+	5750 2450 6150 2450
+Wire Wire Line
+	5750 2700 5750 2450
+Wire Wire Line
+	5750 3300 6150 3300
+Connection ~ 5750 3300
+Wire Wire Line
+	5750 3000 5750 3300
+Wire Wire Line
+	6150 3050 6200 3050
+Wire Wire Line
+	6150 3300 6150 3050
+Wire Wire Line
+	5450 3300 5750 3300
+Wire Wire Line
+	5450 3050 5450 3300
+Wire Wire Line
+	5400 3050 5450 3050
+Wire Wire Line
+	4700 3050 4700 2450
+Wire Wire Line
+	4800 3050 4700 3050
+$Comp
+L Isolator:6N138 U1
+U 1 1 5E1D2B56
+P 6500 2950
+F 0 "U1" H 6500 3417 50  0000 C CNN
+F 1 "6N138" H 6500 3326 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6790 2650 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 6790 2650 50  0001 C CNN
+F 4 "R" H 6500 2950 50  0001 C CNN "Spice_Primitive"
+F 5 "1" H 6500 2950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6500 2950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5_180degree J2
+U 1 1 5E1CB8E5
+P 5100 2950
+F 0 "J2" H 5100 2675 50  0000 C CNN
+F 1 "MIDI In" H 5100 2584 50  0000 C CNN
+F 2 "midi_io:CUI_SDS-50J" H 5100 2950 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 5100 2950 50  0001 C CNN
+F 4 "R" H 5100 2950 50  0001 C CNN "Spice_Primitive"
+F 5 "1" H 5100 2950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5100 2950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5100 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5E2334EE
+P 6600 4400
+F 0 "#PWR04" H 6600 4250 50  0001 C CNN
+F 1 "VCC" H 6550 4550 50  0000 L CNN
+F 2 "" H 6600 4400 50  0001 C CNN
+F 3 "" H 6600 4400 50  0001 C CNN
+	1    6600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E234006
+P 6450 4400
+F 0 "#PWR03" H 6450 4150 50  0001 C CNN
+F 1 "GND" H 6450 4250 50  0000 C CNN
+F 2 "" H 6450 4400 50  0001 C CNN
+F 3 "" H 6450 4400 50  0001 C CNN
+	1    6450 4400
+	-1   0    0    1   
+$EndComp
+Text Label 6350 4750 0    50   ~ 0
+TX
+Text Label 6350 4650 0    50   ~ 0
+RX
+Wire Wire Line
+	6450 4550 6650 4550
+Wire Wire Line
+	6600 4450 6650 4450
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5E2382CC
+P 6850 4550
+F 0 "J3" H 6930 4542 50  0000 L CNN
+F 1 "Conn_01x04" H 6930 4451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6850 4550 50  0001 C CNN
+F 3 "~" H 6850 4550 50  0001 C CNN
+F 4 "R" H 6850 4550 50  0001 C CNN "Spice_Primitive"
+F 5 "1" H 6850 4550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6850 4550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4650 6650 4650
+Wire Wire Line
+	6350 4750 6650 4750
+Wire Wire Line
+	6450 4550 6450 4400
+Wire Wire Line
+	6600 4450 6600 4400
+$Comp
+L power:VCC #PWR0101
+U 1 1 5E251F3A
+P 4800 4550
+F 0 "#PWR0101" H 4800 4400 50  0001 C CNN
+F 1 "VCC" H 4818 4723 50  0000 C CNN
+F 2 "" H 4800 4550 50  0001 C CNN
+F 3 "" H 4800 4550 50  0001 C CNN
+	1    4800 4550
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5100 3250
+NoConn ~ 5400 2950
+NoConn ~ 4800 2950
+$Comp
+L Device:D D1
+U 1 1 5E269A0F
+P 5750 2850
+F 0 "D1" V 5704 2929 50  0000 L CNN
+F 1 "1N4001-G" V 5795 2929 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 5750 2850 50  0001 C CNN
+F 3 "~" H 5750 2850 50  0001 C CNN
+F 4 "R" H 5750 2850 50  0001 C CNN "Spice_Primitive"
+F 5 "1" H 5750 2850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5750 2850 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5750 2850
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
