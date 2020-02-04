@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MIDI IO Breakout"
-Date "2020-01-15"
+Date "2020-02-04"
 Rev "1"
 Comp "Kushview, LLC"
 Comment1 ""
