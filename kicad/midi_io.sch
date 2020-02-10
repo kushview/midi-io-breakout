@@ -213,6 +213,7 @@ F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 6790 2650 50  0001 C
 F 4 "R" H 6500 2950 50  0001 C CNN "Spice_Primitive"
 F 5 "1" H 6500 2950 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 6500 2950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "6N138" H 6500 2950 50  0001 C CNN "MPN"
 	1    6500 2950
 	1    0    0    -1  
 $EndComp
@@ -266,7 +267,7 @@ U 1 1 5E2382CC
 P 6850 4550
 F 0 "J3" H 6930 4542 50  0000 L CNN
 F 1 "Conn_01x04" H 6930 4451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6850 4550 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6850 4550 50  0001 C CNN
 F 3 "~" H 6850 4550 50  0001 C CNN
 F 4 "R" H 6850 4550 50  0001 C CNN "Spice_Primitive"
 F 5 "1" H 6850 4550 50  0001 C CNN "Spice_Model"
@@ -307,6 +308,7 @@ F 3 "~" H 5750 2850 50  0001 C CNN
 F 4 "R" H 5750 2850 50  0001 C CNN "Spice_Primitive"
 F 5 "1" H 5750 2850 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 5750 2850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "1N4001-G" H 5750 2850 50  0001 C CNN "MPN"
 	1    5750 2850
 	0    1    1    0   
 $EndComp
