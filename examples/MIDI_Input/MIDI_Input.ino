@@ -11,7 +11,7 @@
     Set to 1 if you need to log text to the serial console. When enabled you
     are free to use Serial.print functions.
 */
-#define USE_SW_SERIAL   0
+#define USE_SW_SERIAL   1
 
 /** The RX pin to use in the sofware serial when enabled */
 #define PIN_SW_RX       2
@@ -33,7 +33,7 @@
 #endif
 
 void handleNoteOn (byte channel, byte note, byte velocity) {
-    DBG("Handle Note On");
+    DBG ("Handle Note On");
 }
 
 void handleNoteOff (byte channel, byte note, byte velocity) {
