@@ -1,7 +1,17 @@
 /*
-    A basic MIDI note input handler. 
+    MIDI input handler
 
-    This example requires the MIDI Library to be installed
+    This sketch shows how to use the Serial or SoftwareSerial to read MIDI data.
+
+    Dependencies:
+    - Arduino MIDI Library - https://www.arduinolibraries.info/libraries/midi-library
+
+    The circuit:
+    - MIDI Breakout VCC connected to +5V pin
+    - MIDI Breakout GND connected to GND pin
+    - MIDI Breakout RX connected to RX pin or PIN_SW_RX
+
+    This example code is in the public domain.
 */
 
 #include <MIDI.h>
@@ -11,7 +21,7 @@
     Set to 1 if you need to log text to the serial console. When enabled you
     are free to use Serial.print functions.
 */
-#define USE_SW_SERIAL   1
+#define USE_SW_SERIAL   0
 
 /** The RX pin to use in the sofware serial when enabled */
 #define PIN_SW_RX       2
