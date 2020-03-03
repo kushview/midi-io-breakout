@@ -1,4 +1,4 @@
-/.vscode
+.vscode/
 .DS_Store
 midi_io/midi_io.kicad_pcb-bak
 midi_io/midi_io.sch-bak
