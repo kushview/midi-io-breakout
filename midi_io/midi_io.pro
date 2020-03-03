@@ -1,4 +1,4 @@
-update=Tuesday, 03 March 2020 at 02:28:29
+update=Tue 03 Mar 2020 12:17:49 PM EST
 version=1
 last_client=kicad
 [general]
@@ -237,7 +237,7 @@ Enabled=1
 [pcbnew/Layer.F.CrtYd]
 Enabled=1
 [pcbnew/Layer.B.Fab]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
