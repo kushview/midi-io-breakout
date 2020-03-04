@@ -4,3 +4,6 @@
 midi_io/midi_io.kicad_pcb-bak
 midi_io/midi_io.sch-bak
 midi_io/gerbers.zip
+*.gbr
+*.drl
+
