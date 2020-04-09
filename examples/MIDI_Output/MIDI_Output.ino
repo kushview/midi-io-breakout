@@ -59,7 +59,7 @@ void setup() {
 }
 
 void loop() {
-  // play notes from F#-0 (0x1E) to F#-5 (0x5A):
+    // play notes from F#-0 (0x1E) to F#-5 (0x5A):
     for (uint8_t note = 0x1E; note < 0x5A; note++) {
         // send note on
         sendNote (true, note, 0x45);
